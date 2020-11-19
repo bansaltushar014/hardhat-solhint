@@ -1,6 +1,6 @@
 {
-  "name": "@nomiclabs/hardhat-solhint",
-  "version": "2.0.0",
+  "name": "@unipeer/hardhat-solhint",
+  "version": "2.0.1",
   "description": "Hardhat plugin for solhint",
   "repository": "github:nomiclabs/hardhat",
   "homepage": "https://github.com/nomiclabs/hardhat/tree/master/packages/hardhat-solhint",
@@ -17,6 +17,9 @@
     "solidity",
     "linter"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint:fix": "node ./node_modules/prettier/bin-prettier.js --write \"src/**/*.{js,ts}\" \"test/**/*.{js,ts}\" && yarn lint --fix",
     "lint": "node ./node_modules/tslint/bin/tslint --config tslint.json --project ./tsconfig.json",
